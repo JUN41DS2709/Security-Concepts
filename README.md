@@ -98,7 +98,7 @@ Security-Concepts/
 
 ### Core Concepts
 
-* [ ] CIA Triad
+* [x] CIA Triad
 * [ ] Asset, Threat, Vulnerability, Risk
 * [ ] Security Controls
 * [ ] Defense in Depth
