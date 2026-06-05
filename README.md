@@ -1,4 +1,7 @@
 # Security Concepts 🔐
+<p align="center">
+  <img src="images/concepts.jpg" alt="concept" width="700">
+</p>
 
 ## About
 
