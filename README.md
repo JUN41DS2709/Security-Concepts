@@ -100,7 +100,7 @@ Security-Concepts/
 
 * [x] CIA Triad
 * [X] Asset, Threat, Vulnerability, Risk
-* [ ] Security Controls
+* [X] Security Controls
 * [ ] Defense in Depth
 * [ ] Least Privilege
 * [ ] Authentication vs Authorization
