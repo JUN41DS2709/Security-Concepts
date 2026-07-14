@@ -98,10 +98,10 @@ Security-Concepts/
 
 ### Core Concepts
 
-* [x] CIA Triad
+* [X] CIA Triad
 * [X] Asset, Threat, Vulnerability, Risk
 * [X] Security Controls
-* [ ] Defense in Depth
+* [X] Defense in Depth
 * [ ] Least Privilege
 * [ ] Authentication vs Authorization
 * [ ] Attack Surface
