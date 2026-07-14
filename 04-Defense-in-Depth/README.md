@@ -1,5 +1,5 @@
 # DEFENSE IN DEPTH
-(did hero image)[did.png/images]
+![hero](images/did.png)
 Defense in Depth is a cybersecurity strategy where multiple security layers are implemented to protect assets, data, or systems.
 
 We cannot rely on a single layer of security. The idea is that if one implemented security layer fails, another layer should be available to protect, detect, or contain the attack.
