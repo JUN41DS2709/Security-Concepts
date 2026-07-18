@@ -102,7 +102,7 @@ Security-Concepts/
 * [X] Asset, Threat, Vulnerability, Risk
 * [X] Security Controls
 * [X] Defense in Depth
-* [ ] Least Privilege
+* [X] Least Privilege
 * [ ] Authentication vs Authorization
 * [ ] Attack Surface
 
