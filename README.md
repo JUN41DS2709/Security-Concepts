@@ -67,7 +67,7 @@ Security-Concepts/
 ├── 03-Security-Controls/
 ├── 04-Defense-in-Depth/
 ├── 05-Least-Privilege/
-├── 06-Authentication-vs-Authorization/
+├── 06-AAA-Authentication-Authorization-Accounting/
 ├── 07-Attack-Surface/
 │
 ├── 08-Symmetric-vs-Asymmetric-Encryption/
