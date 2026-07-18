@@ -1,8 +1,8 @@
-\# Principle of Least Privilege (PoLP)
+# Principle of Least Privilege (PoLP)
 
 
 
-\## Definition
+## Definition
 
 
 
@@ -14,11 +14,11 @@ The only motive behind this principle is to minimize the attack surface for an a
 
 
 
-\---
+---
 
 
 
-\## Example
+## Example
 
 
 
@@ -34,49 +34,49 @@ Giving the employee only the required access allows them to perform their work c
 
 
 
-\---
+---
 
 
 
-\## Why is the Principle of Least Privilege Important
+## Why is the Principle of Least Privilege Important
 
 
 
-\- Minimizes the attack surface.
+- Minimizes the attack surface.
 
-\- Reduces the impact of compromised accounts.
+- Reduces the impact of compromised accounts.
 
-\- Prevents unauthorized access to sensitive information.
+- Prevents unauthorized access to sensitive information.
 
-\- Limits insider threats.
+- Limits insider threats.
 
-\- Helps maintain confidentiality, integrity, and availability (CIA Triad).
+- Helps maintain confidentiality, integrity, and availability (CIA Triad).
 
-\- Makes privilege escalation attacks more difficult.
+- Makes privilege escalation attacks more difficult.
 
-\- Helps organizations comply with security standards and regulations.
-
-
-
-\---
+- Helps organizations comply with security standards and regulations.
 
 
 
-\## Key Points
+---
 
 
 
-\- Give only the permissions that are required.
-
-\- Never grant unnecessary access.
-
-\- Review and remove unused privileges regularly.
-
-\- Apply the principle to users, applications, services, devices, and processes.
+## Key Points
 
 
 
-\---
+- Give only the permissions that are required.
+
+- Never grant unnecessary access.
+
+- Review and remove unused privileges regularly.
+
+- Apply the principle to users, applications, services, devices, and processes.
+
+
+
+---
 
 
 
