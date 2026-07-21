@@ -2,11 +2,11 @@
 
 
 
-**AAA (Authentication, Authorization, and Accounting)\*\* is a fundamental cybersecurity framework used to control, monitor, and improve the security of devices, systems, networks, and data. It ensures that only authorized users can access resources, defines what actions they are allowed to perform, and records their activities for auditing and accountability.
+**AAA (Authentication, Authorization, and Accounting)** is a fundamental cybersecurity framework used to control, monitor, and improve the security of devices, systems, networks, and data. It ensures that only authorized users can access resources, defines what actions they are allowed to perform, and records their activities for auditing and accountability.
 
 
 
-**Note:** The official term is \*\*Accounting\*\*, but it is often explained as \*\*Accountability\*\* because it keeps users accountable for their actions.
+**Note:** The official term is **Accounting**, but it is often explained as **Accountability** because it keeps users accountable for their actions.
 
 
 
