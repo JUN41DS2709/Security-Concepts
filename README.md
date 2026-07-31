@@ -103,8 +103,8 @@ Security-Concepts/
 * [X] Security Controls
 * [X] Defense in Depth
 * [X] Least Privilege
-* [ ] Authentication vs Authorization
-* [ ] Attack Surface
+* [X] Authentication vs Authorization
+* [X] Attack Surface
 
 ### Encryption & Hashing
 
