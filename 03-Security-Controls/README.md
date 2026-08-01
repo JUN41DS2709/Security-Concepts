@@ -14,12 +14,12 @@ Security controls are safeguards or protective measures implemented to protect a
 
 The primary purpose of security controls is to
 
- Reduce security risks
- Prevent unauthorized access
- Detect security incidents
- Minimize the impact of attacks
- Protect the Confidentiality, Integrity, and Availability (CIA) of information
- Help organizations recover after a security incident
+- Reduce security risks
+- Prevent unauthorized access
+- Detect security incidents
+- Minimize the impact of attacks
+- Protect the Confidentiality, Integrity, and Availability (CIA) of information
+- Help organizations recover after a security incident
 
 Security controls are generally divided into three major categories, and they are also classified into different types based on the purpose they serve.
 
@@ -47,17 +47,17 @@ Unlike technical controls, administrative controls focus more on people and proc
 
 ### Examples
 
- Security awareness training
- Security policies
- Password policies
- Acceptable Use Policy (AUP)
- Incident Response Plan
- Risk assessments
- Employee onboarding
- Employee offboarding
- Background verification
- Security audits
- Compliance requirements
+ - Security awareness training
+ - Security policies
+ - Password policies
+ - Acceptable Use Policy (AUP)
+ - Incident Response Plan
+ - Risk assessments
+ - Employee onboarding
+ - Employee offboarding
+ - Background verification
+ - Security audits
+ - Compliance requirements
 
 ### Key Points
 
@@ -78,25 +78,25 @@ Their main objective is to prevent unauthorized individuals from gaining physica
 
 ### Examples
 
- Biometric authentication
- Fingerprint scanners
- Facial recognition systems
- Key locks
- Smart card access
- Security guards
- CCTV cameras
- Security gates
- Fences
- Turnstiles
- Motion detectors
- Security lighting
- Server room locks
+ - Biometric authentication
+ - Fingerprint scanners
+ - Facial recognition systems
+ - Key locks
+ - Smart card access
+ - Security guards
+ - CCTV cameras
+ - Security gates
+ - Fences
+ - Turnstiles
+ - Motion detectors
+ - Security lighting
+ - Server room locks
 
 ### Key Points
 
- Protects buildings, equipment, and employees
- Prevents physical theft and unauthorized access
- Often works together with administrative and technical controls
+ - Protects buildings, equipment, and employees
+ - Prevents physical theft and unauthorized access
+ - Often works together with administrative and technical controls
 
 ---
 
@@ -110,26 +110,26 @@ Unlike administrative controls, technical controls rely on technology instead of
 
 ### Examples
 
- Firewalls
- Intrusion Detection Systems (IDS)
- Intrusion Prevention Systems (IPS)
- Antivirus software
- Endpoint Detection & Response (EDR)
- Multi-Factor Authentication (MFA)
- Encryption
- Access Control Lists (ACLs)
- Virtual Private Networks (VPNs)
- Network segmentation
- Data Loss Prevention (DLP)
- Web Application Firewalls (WAF)
+ - Firewalls
+ - Intrusion Detection Systems (IDS)
+ - Intrusion Prevention Systems (IPS)
+ - Antivirus software
+ - Endpoint Detection & Response (EDR)
+ - Multi-Factor Authentication (MFA)
+ - Encryption
+ - Access Control Lists (ACLs)
+ - Virtual Private Networks (VPNs)
+ - Network segmentation
+ - Data Loss Prevention (DLP)
+ - Web Application Firewalls (WAF)
 
 ### Key Points
 
- Protects digital assets
- Controls user access
- Detects malicious activity
- Prevents unauthorized access
- Secures data during storage and transmission
+ - Protects digital assets
+ - Controls user access
+ - Detects malicious activity
+ - Prevents unauthorized access
+ - Secures data during storage and transmission
 
 ---
 
@@ -147,13 +147,13 @@ Their main objective is to reduce the chances of a successful attack.
 
 ### Examples
 
- Firewalls
- Multi-Factor Authentication (MFA)
- Password policies
- Security awareness training
- Access control
- Network segmentation
- Antivirus software
+- Firewalls
+- Multi-Factor Authentication (MFA)
+- Password policies
+- Security awareness training
+- Access control
+- Network segmentation
+- Antivirus software
 
 ### Purpose
 
@@ -169,12 +169,12 @@ These controls help security teams investigate incidents and respond quickly.
 
 ### Examples
 
- Intrusion Detection Systems (IDS)
- Security Information and Event Management (SIEM)
- Audit logs
- CCTV cameras
- File Integrity Monitoring (FIM)
- Continuous security monitoring
+- Intrusion Detection Systems (IDS)
+- Security Information and Event Management (SIEM)
+- Audit logs
+- CCTV cameras
+- File Integrity Monitoring (FIM)
+- Continuous security monitoring
 
 ### Purpose
 
@@ -190,12 +190,12 @@ These controls are implemented after an attack has occurred.
 
 ### Examples
 
- Installing security patches
- Removing malware
- Rebuilding compromised systems
- Resetting compromised passwords
- Updating firewall rules
- Fixing software vulnerabilities
+ - Installing security patches
+ - Removing malware
+ - Rebuilding compromised systems
+ - Resetting compromised passwords
+ - Updating firewall rules
+ - Fixing software vulnerabilities
 
 ### Purpose
 
@@ -211,12 +211,12 @@ Although they may not physically stop an attacker, they reduce the likelihood of
 
 ### Examples
 
- CCTV cameras
- Security guards
- Warning banners
- Security signs
- Account lockout policies
- Visible fences
+- CCTV cameras
+- Security guards
+- Warning banners
+- Security signs
+- Account lockout policies
+- Visible fences
 
 ### Purpose
 
@@ -232,13 +232,13 @@ These controls focus on business continuity and disaster recovery.
 
 ### Examples
 
- Data backups
- Cloud backups
- Disaster Recovery Plans (DRP)
- Business Continuity Plans (BCP)
- Database restoration
- System restoration
- Redundant servers
+ - Data backups
+ - Cloud backups
+ - Disaster Recovery Plans (DRP)
+ - Business Continuity Plans (BCP)
+ - Database restoration
+ - System restoration
+ - Redundant servers
 
 ### Purpose
 
@@ -258,19 +258,19 @@ Suppose an old legacy application does not support Multi-Factor Authentication (
 
 Since MFA cannot be implemented, the organization may compensate by
 
- Restricting access through a VPN
- Allowing access only from specific IP addresses
- Increasing security monitoring
- Using network segmentation
+- Restricting access through a VPN
+- Allowing access only from specific IP addresses
+- Increasing security monitoring
+- Using network segmentation
 
 These become compensating controls because they provide alternative protection.
 
 ### More Examples
 
- Additional monitoring for legacy systems
- Manual approval processes
- Network isolation
- Extra logging and auditing
+ - Additional monitoring for legacy systems
+ - Manual approval processes
+ - Network isolation
+ - Extra logging and auditing
 
 ### Purpose
 
@@ -282,34 +282,34 @@ Provide an alternative security measure when the original control cannot be impl
 
 ## Categories of Security Controls
 
- Category                     Focus                            Examples                                                       
- ---------------------------  -------------------------------  -------------------------------------------------------------- 
- Administrative  Managerial  People, policies, and processes  Security policies, awareness training, onboarding, offboarding 
- Physical                     Physical assets and facilities   Biometric scanners, CCTV, fences, locks, security guards       
- Technical  Logical          Systems, networks, and data      Firewalls, IDS, IPS, MFA, VPN, encryption                      
-
+| **Category**                | **Focus**                          | **Examples**                                                      |
+|-----------------------------|------------------------------------|-------------------------------------------------------------------|
+| **Administrative (Managerial)** | People, policies, and processes | Security policies, awareness training, onboarding, offboarding    |
+| **Physical**                | Physical assets and facilities     | Biometric scanners, CCTV, fences, locks, security guards          |
+| **Technical (Logical)**     | Systems, networks, and data        | Firewalls, IDS, IPS, MFA, VPN, encryption                         |
 ---
 
 ## Types of Security Controls
-
- Type          Purpose                                    Examples                                         
- ------------  -----------------------------------------  ------------------------------------------------ 
- Preventive    Prevent attacks before they occur          Firewalls, MFA, Antivirus                        
- Detective     Detect attacks during or after they occur  IDS, SIEM, Audit Logs                            
- Corrective    Repair damage after an attack              Patching, Malware removal                        
- Deterrent     Discourage attackers                       CCTV, Security guards, Warning banners           
- Recovery      Recover systems and data                   Backups, Disaster Recovery, Business Continuity  
- Compensating  Alternative security controls              VPN, Network segmentation, Additional monitoring 
+| Type          | Purpose                                    | Examples                                         |
+|---------------|--------------------------------------------|--------------------------------------------------|
+| Preventive    | Prevent attacks before they occur          | Firewalls, MFA, Antivirus                        |
+| Detective     | Detect attacks during or after they occur  | IDS, SIEM, Audit Logs                            |
+| Corrective    | Repair damage after an attack              | Patching, Malware Removal                        |
+| Deterrent     | Discourage attackers                       | CCTV, Security Guards, Warning Banners           |
+| Recovery      | Recover systems and data                   | Backups, Disaster Recovery, Business Continuity  |
+| Compensating  | Alternative security controls              | VPN, Network Segmentation, Additional Monitoring |
 
 ---
 
 # Final Notes
 
- Security controls are often used together, not individually.
- A single control can sometimes fit into multiple categories or types, depending on how it is implemented.
- A strong security posture uses a combination of Administrative, Physical, and Technical controls to provide defense in depth.
- Understanding why a security control exists is just as important as memorizing its definition.
+- Security controls are often used together, not individually.
+- A single control can sometimes fit into multiple categories or types, depending on how it is implemented.
+- A strong security posture uses a combination of Administrative, Physical, and Technical controls to provide defense in depth.
+- Understanding why a security control exists is just as important as memorizing its definition.
 
 ---
 
- Learning Note These notes reflect my current understanding of Security Controls while studying Cybersecurity. As I gain more hands-on experience and continue learning, I will update and improve them accordingly.
+ Learning Note :- 
+ - These notes reflect my current understanding of Security Controls while studying Cybersecurity. As I gain more hands-on experience and continue learning, I will update and improve them accordingly.
+---
