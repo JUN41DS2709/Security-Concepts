@@ -1,6 +1,6 @@
 # Practical Demonstration of a DoS Attack Using Slowloris
 
-> \\\\\\\*\\\\\\\*Lab scope:\\\\\\\*\\\\\\\* This demonstration was performed in an isolated lab
+> **Lab scope:** This demonstration was performed in an isolated lab
 > environment using a Linux attacker machine and a Metasploitable 2
 > target. The procedure should only be performed against systems that
 > you own or are explicitly authorized to test.
@@ -15,9 +15,9 @@
 * **Tools used:** `ifconfig`, `ping`, `nmap`, Metasploit Framework
 (`msfconsole`), and `curl`
 
-\---
+---
 
-## 1\. Verifying the Target IP Address
+## 1. Verifying the Target IP Address
 
 I first started both virtual machines: the Kali Linux machine and the
 Metasploitable 2 machine.
@@ -26,7 +26,7 @@ On the Metasploitable 2 machine, I used `ifconfig` to verify its network
 configuration and identify its IP address. The target was assigned the
 address `192.168.1.114`.
 
-!\[Metasploitable 2 IP configuration](images/1.png)
+![Metasploitable 2 IP configuration](images/1.png)
 
 I then confirmed connectivity from the Kali Linux machine by sending
 five ICMP echo requests:
@@ -39,11 +39,11 @@ The `-c 5` option limits the test to five packets. This provides a quick
 way to verify that the target is reachable before performing further
 enumeration.
 
-!\[Ping connectivity test](images/2.png)
+![Ping connectivity test](images/2.png)
 
-\---
+---
 
-## 2\. Enumerating Network Services with Nmap
+## 2. Enumerating Network Services with Nmap
 
 After confirming connectivity, I performed service enumeration against
 the target:
@@ -59,11 +59,11 @@ Because the planned lab exercise uses **Slowloris**, an HTTP service is
 required. The scan showed that the target was running a web server on
 port 80, making it suitable for this demonstration.
 
-!\[Nmap service enumeration](images/3.png)
+![Nmap service enumeration](images/3.png)
 
-\---
+---
 
-## 3\. Launching Metasploit Framework
+## 3. Launching Metasploit Framework
 
 Next, I launched the Metasploit Framework from the Kali Linux terminal:
 
@@ -75,11 +75,11 @@ Metasploit provides a collection of modules for security testing,
 including modules designed to demonstrate denial-of-service conditions
 in controlled environments.
 
-!\[Launching Metasploit](images/4.png)
+![Launching Metasploit](images/4.png)
 
-\---
+---
 
-## 4\. Selecting the Slowloris Module
+## 4. Selecting the Slowloris Module
 
 I selected the HTTP Slowloris denial-of-service module:
 
@@ -87,9 +87,7 @@ I selected the HTTP Slowloris denial-of-service module:
 use auxiliary/dos/http/slowloris
 ```
 
-> \\\\\\\*\\\\\\\*Correction:\\\\\\\*\\\\\\\* The module name is `slowloris`, not `solaris`.
-
-!\[Selecting the Slowloris module](images/5.png)
+![Selecting the Slowloris module](images/5.png)
 
 ### About the Slowloris Module
 
@@ -102,9 +100,9 @@ legitimate clients from being served normally. In this lab, the module
 was used to demonstrate how an HTTP service can become unavailable under
 connection exhaustion.
 
-\---
+---
 
-## 5\. Reviewing the Module Configuration
+## 5. Reviewing the Module Configuration
 
 After selecting the module, I reviewed its available options with:
 
@@ -124,15 +122,15 @@ The module displayed several configurable parameters, including:
 The default configuration shown in the lab used port `80`, `150`
 sockets, a `15`-second delay, and SSL disabled.
 
-!\[Slowloris module options](images/6.png)
+![Slowloris module options](images/6.png)
 
-!\[Slowloris module options](images/7.png)
+![Slowloris module options](images/7.png)
 
-!\[Slowloris module options](images/8.png)
+![Slowloris module options](images/8.png)
 
-\---
+---
 
-## 6\. Configuring the Target
+## 6. Configuring the Target
 
 I initially attempted to configure the target using:
 
@@ -145,7 +143,7 @@ indicated that the option name had not been entered correctly. After
 correcting the configuration, `RHOSTS` was successfully set to
 `192.168.1.114`.
 
-!\[Setting the target address](images/9.png)
+![Setting the target address](images/9.png)
 
 The relevant configuration then showed:
 
@@ -156,9 +154,9 @@ SOCKETS  150
 SSL      false
 ```
 
-\---
+---
 
-## 7\. Starting the Slowloris Demonstration
+## 7. Starting the Slowloris Demonstration
 
 With the target configured, I started the module using:
 
@@ -179,13 +177,13 @@ Sending keep-alive headers ... Socket count: 150
 indicate that the module was maintaining the connections rather than
 immediately closing them.
 
-!\[Slowloris module running](images/10.png)
+![Slowloris module running](images/10.png)
 
-!\[Slowloris connections being maintained](images/11.png)
+![Slowloris connections being maintained](images/11.png)
 
-\---
+---
 
-## 8\. Verifying the Target During the Test
+## 8. Verifying the Target During the Test
 
 While the Slowloris module was running, I monitored the target from the
 Kali Linux machine.
@@ -193,7 +191,7 @@ Kali Linux machine.
 The Metasploitable 2 web page was initially accessible through the
 browser, confirming that the HTTP service was responding.
 
-!\[Metasploitable 2 web page during the lab](images/12.png)
+![Metasploitable 2 web page during the lab](images/12.png)
 
 I also used `curl` to inspect the HTTP response headers:
 
@@ -213,11 +211,11 @@ Content-Type: text/html
 This confirmed that the web server was reachable and responding to HTTP
 requests at that point in the demonstration.
 
-!\[HTTP response from curl](images/13.png)
+![HTTP response from curl](images/13.png)
 
-\---
+---
 
-## 9\. Observing the Availability Impact
+## 9. Observing the Availability Impact
 
 I then started the Slowloris module again and allowed it to maintain the
 connections. While the module was active, I tested the web service with
@@ -237,16 +235,16 @@ This is the key observation from the lab. The HTTP request did not
 receive a response within the five-second timeout while the Slowloris
 connections were being maintained.
 
-!\[HTTP request timing out during the test](images/14.png)
+![HTTP request timing out during the test](images/14.png)
 
 The result demonstrates the **availability impact** of the attack in
 this intentionally vulnerable lab environment: a legitimate HTTP client
 can experience delays or timeouts when the server's available connection
 resources are consumed by long-lived connections.
 
-\---
+---
 
-## 10\. Stopping the Demonstration
+## 10. Stopping the Demonstration
 
 After observing the effect, I stopped the module with `Ctrl+C`.
 
@@ -258,9 +256,9 @@ particularly when working with intentionally vulnerable virtual
 machines, so that the lab environment can be returned to its normal
 state.
 
-\---
+---
 
-## 11\. Result and Analysis
+## 11. Result and Analysis
 
 The practical demonstrated the following workflow:
 
@@ -282,9 +280,9 @@ technique such as Slowloris can instead attempt to exhaust server-side
 connection resources by keeping many HTTP connections open for an
 extended period.
 
-\---
+---
 
-## 12\. Conclusion
+## 12. Conclusion
 
 This lab provided a practical demonstration of how an HTTP service can
 be affected by a connection-exhaustion denial-of-service technique. The
